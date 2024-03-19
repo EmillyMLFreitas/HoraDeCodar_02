@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 || HoraDeCodar 02</title>
+</head>
+
+<body>
+    <p>06. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último
+        e o maior de todos eles (considere que todos os números informados serão diferentes)</p>
+    <script>
+        var num1 = parseInt(prompt("Informe um número:"));
+        var num2 = parseInt(prompt("Informe outro número:"));
+        var num3 = parseInt(prompt("Informe mais um número:"));
+        var num4 = parseInt(prompt("Informe mais outro número:"));
+
+        var resultado = num1;
+
+        if (num1 === num2 && num2 === num3 && num3 === num4 && num4 === num1) {
+            document.write("Os números informados são iguais.");
+        }
+
+        else {
+
+            if (num2 > num1 && num2 > num3 && num2 > num4) {
+                resultado = num2
+            }
+
+            if (num3 > num1 && num3 > num2 && num3 > num4) {
+                resultado = num3
+            }
+
+            if (num4 > num1 && num4 > num2 && num4 > num3) {
+                resultado = num4
+            }
+
+            document.write("O Primero número é: " + num1 + " O Maior número é: " + resultado + " O último número é: " + num4 + ".");
+        }
+
+    </script>
+</body>
+
+</html>

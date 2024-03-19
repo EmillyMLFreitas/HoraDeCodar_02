@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 || HoraDeCodar 02</title>
+</head>
+
+<body>
+    <p>11. Uma micro calculadora <br> Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das
+        seguintes operações a serem executadas (codificada da seguinte forma: ). O programa deve calcular e escrever o
+        resultado dessa operação sobre os dois valores lidos <br> 1 - Adição, 2 - Subtração, 3 - Divisão, 4 -
+        Multiplicação
+    </p>
+    <script>
+        var num1 = parseInt(prompt("Informe o 1° número:"));
+        var num2 = parseInt(prompt("Informe o 2° número:"));
+        var opcao = prompt("Informe qual operação deseja realizar - '1' (Adição) '2' (Subtração) '3' (Divisão) '4' (Multiplicação):");
+        var adicao = num1 + num2;
+        var subtracao = num1 - num2;
+        var divisao = num1 * num2;
+        var multiplicacao = num1/  num2;
+
+
+        if (opcao == "1") {
+            document.write("Resultado: " + num1 + "+" + num2 + "=" + adicao + "." );
+        }
+
+        else if (opcao == "2") {;
+            document.write("Resultado: " + num1 + "-" + num2 + "=" + subtracao + "." );
+        }
+
+        else if (opcao == "3") {;
+            document.write("Resultado: " + num1 + "*" + num2 + "=" + divisao + "." );
+        }
+
+        else if (opcao == "4") {;
+            document.write("Resultado: " + num1 + "/" + num2 + "=" + multiplicacao + "." );
+        }
+
+        else {
+            document.write("Opção inválida.");
+        }
+
+    </script>
+</body>
+
+</html>
